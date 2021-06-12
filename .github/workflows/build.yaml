@@ -27,4 +27,4 @@ jobs:
           context: ./
           push: true
           file: ./Dockerfile
-          tags: eu.gcr.io/quotes:latest
+          tags: eu.gcr.io/${{secrets.GCP_PROJECT_ID}}/quotes:latest
