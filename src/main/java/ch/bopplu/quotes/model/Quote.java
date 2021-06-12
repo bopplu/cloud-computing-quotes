@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 @Document(collectionName = "quotes")
 public class Quote {
-    
+
     @DocumentId
     private String index;
     

@@ -1,5 +1,6 @@
 spring:
   cloud:
     gcp:
-      firestore:
-        project-id: ${PROJECT_ID}
+      datastore:
+        emulator:
+          enabled: false
