@@ -24,7 +24,7 @@ jobs:
       - name: docker login
         uses: docker/login-action@v1
         with:
-          registry: eu.gcr.io
+          registry: gcr.io
           username: _json_key
           password: ${{secrets.GCR_SA_KEY}}
       - name: docker build
