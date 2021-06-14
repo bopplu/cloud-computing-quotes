@@ -14,7 +14,7 @@ import java.util.Random;
 @CrossOrigin
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/quotes")
+@RequestMapping("/api/quotes")
 public class QuotesController {
     
     private static final int MAX_QUOTE = 3114;
