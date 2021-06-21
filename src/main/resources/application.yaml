@@ -4,3 +4,7 @@ spring:
       datastore:
         emulator:
           enabled: false
+
+logging:
+  level:
+    root: debug

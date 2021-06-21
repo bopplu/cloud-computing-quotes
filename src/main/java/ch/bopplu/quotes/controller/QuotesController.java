@@ -3,6 +3,8 @@ package ch.bopplu.quotes.controller;
 import ch.bopplu.quotes.firestore.QuotesRepository;
 import ch.bopplu.quotes.model.Quote;
 import lombok.RequiredArgsConstructor;
+import org.springframework.nativex.hint.AotProxyHint;
+import org.springframework.nativex.hint.TypeHint;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
