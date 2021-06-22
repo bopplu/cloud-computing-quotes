@@ -4,7 +4,11 @@ spring:
       datastore:
         emulator:
           enabled: false
+      firestore:
+        enabled: false
 
 logging:
   level:
-    root: debug
+    root: info
+    sun: info
+    javax: info

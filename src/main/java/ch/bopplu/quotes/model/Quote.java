@@ -1,14 +1,12 @@
 package ch.bopplu.quotes.model;
 
-import com.google.cloud.firestore.annotation.DocumentId;
-import com.google.cloud.spring.data.firestore.Document;
 import lombok.Data;
 
 @Data
-@Document(collectionName = "quotes")
+//@Document(collectionName = "quotes")
 public class Quote {
 
-    @DocumentId
+//    @DocumentId
     private String index;
     
     private String text;

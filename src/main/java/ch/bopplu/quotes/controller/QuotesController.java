@@ -1,6 +1,7 @@
 package ch.bopplu.quotes.controller;
 
 import ch.bopplu.quotes.firestore.QuotesRepository;
+import ch.bopplu.quotes.firestore.QuotesService;
 import ch.bopplu.quotes.model.Quote;
 import lombok.RequiredArgsConstructor;
 import org.springframework.nativex.hint.AotProxyHint;
@@ -21,14 +22,15 @@ public class QuotesController {
     
     private static final int MAX_QUOTE = 3114;
     
-    private final QuotesRepository quotesRepository;
+//    private final QuotesRepository quotesRepository;
+    private final QuotesService quotesService;
     
     private final Random random = new Random();
     
     @CrossOrigin
     @GetMapping("/random")
     public Mono<Quote> getRandomQuote() {
-        return quotesRepository.findById(String.format("%d", random.nextInt(MAX_QUOTE)));
+        return quotesService.findById(String.format("%d", random.nextInt(MAX_QUOTE)));
     }
 
 }
